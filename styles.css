@@ -3,8 +3,25 @@ body {
 	font-family: Roboto;
 	font-size: 22px;
 	background: #222222;
-	color: #ffffff
+	color: #ffffff;
+	animation-name: fadeIn;
+	animation-duration: 3s;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
 #border {
 	border-radius: 35px;
 	background: #ffffff;
