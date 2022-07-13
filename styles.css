@@ -7,6 +7,26 @@ body {
 	animation-name: fadeIn;
 	animation-duration: 3s;
 }
+a:link {
+  color: #d88fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #d88fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #d88fff;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #d88fff;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
 @keyframes fadeIn {
   from {
@@ -23,7 +43,7 @@ body {
 }
 
 #border {
-	border-radius: 35px;
+	border-radius: 50px;
 	background: #ffffff;
 	padding: 25px;
 	width: 450px;
