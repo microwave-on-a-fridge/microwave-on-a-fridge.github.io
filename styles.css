@@ -4,8 +4,6 @@ body {
 	font-size: 22px;
 	background: #222222;
 	color: #ffffff;
-	animation-name: fadeIn;
-	animation-duration: 3s;
 }
 a:link {
   color: #d88fff;
@@ -34,6 +32,7 @@ a:active {
   }
 
   to {
+	visibility: visible;
     opacity: 1;
   }
 }
@@ -41,6 +40,107 @@ a:active {
 .fadeIn {
   animation-name: fadeIn;
 }
+
+@keyframes fadeInBottomLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 100%, 0);
+  }
+  to {
+	visibility: visible;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInBottomLeft {
+  animation-name: fadeInBottomLeft;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+	visibility: visible;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+	visibility: visible;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+	visibility: visible;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInBottomRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 100%, 0);
+  }
+  to {
+	visibility: visible;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInBottomRight {
+  animation-name: fadeInBottomRight;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+	visibility: visible;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
 
 #border {
 	border-radius: 50px;
